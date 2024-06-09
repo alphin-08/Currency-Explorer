@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet">
+    <title>Currency Converter</title>
+
+</head>
+<body>
+    <!--Currency Converter Heading-->
+    <h1 class="currency-converter"> Currency <br> Converter</h1>
+
+    <!--Home Button-->
+    <button class= "home-button" onclick="redirectToHome()"> <b>Home</b></button>
+
+    <!--BrowseAllCurrenices Button-->
+    <button class="browse-all-currencies" onclick="redirectToBrowseAllCurrenices()"> <b>Browse All Currencies</b></button>
+
+    <!--LiveRate Button-->
+    <button class="live-rate" onclick="redirectToLiveRates()"> <b>Live Rate</b></button>
+
+    <!--Creating random dots-->
+    
+    <!--Main Image-->
+    <img class = "Coin-machicne" src="currency converter machine.png" alt="Coin Machine">
+
+    <!--The Two Input Boxes-->
+    <form> 
+        <div class = "firstInput"> 
+            <label for="firstInput"> Amount </label>
+            <br>
+            <input type="text" id="firstInput" name=firstInput placeholder="0.00" size="20">
+        </div>
+
+        <div class = "secondInput">
+            <label for="secondInput"> Converted To</label>
+            <br>
+            <input type="text" id="secondInput" name=secondInput placeholder="0.00" size="20">
+        </div>
+
+    </form>
+    
+    <img class="Double-arrow" src="46246.png" alt="double arrow">
+
+    <div class = "ball"> </div>
+    <div class= "ball2"> </div>
+    <div class= "ball3"> </div>
+    <div class= "ball4"> </div>
+    
+    <!--Redirecting Pages-->
+    <script src="Redirect.js"></script>
+</body>
+</html>
