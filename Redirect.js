@@ -4,3 +4,4 @@ function redirectToBrowseAllCurrenices() { window.location.href = 'browseAllCurr
 
 function redirectToLiveRates() { window.location.href = 'liveRates.html'; }
 
+

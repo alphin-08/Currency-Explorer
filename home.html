@@ -8,22 +8,19 @@
 
 </head>
 <body>
-    <!--Currency Converter Heading-->
+    <!--Website Heading-->
     <h1 class="currency-converter"> Currency <br> Converter</h1>
 
-    <!--Home Button-->
-    <button class= "home-button" onclick="redirectToHome()"> <b>Home</b></button>
+    <!--Nav Bar-->
+    <div> 
+    <button class="home-button" onclick="redirectToHome()"> <b>Home</b> </button>
+    <button class="browse-all-currencies" onclick="redirectToBrowseAllCurrenices()"> <b>Browse All Currencies</b> </button>
+    <button class="live-rate" onclick="redirectToLiveRates()"> <b>Live Rate</b> </button>
+    </div>
 
-    <!--BrowseAllCurrenices Button-->
-    <button class="browse-all-currencies" onclick="redirectToBrowseAllCurrenices()"> <b>Browse All Currencies</b></button>
-
-    <!--LiveRate Button-->
-    <button class="live-rate" onclick="redirectToLiveRates()"> <b>Live Rate</b></button>
-
-    <!--Creating random dots-->
-    
-    <!--Main Image-->
-    <img class = "Coin-machicne" src="currency converter machine.png" alt="Coin Machine">
+    <!--Images-->
+    <img class = "Coin-machicne" src="currencyMachine.png" alt="Coin Machine">
+    <img class="Double-arrow" src="doubleArrow.png" alt="double arrow">
 
     <!--The Two Input Boxes-->
     <form> 
@@ -34,14 +31,18 @@
         </div>
 
         <div class = "secondInput">
-            <label for="secondInput"> Converted To</label>
+            <label for="secondInput"> Converted To </label>
             <br>
             <input type="text" id="secondInput" name=secondInput placeholder="0.00" size="20">
         </div>
-
     </form>
-    
-    <img class="Double-arrow" src="46246.png" alt="double arrow">
+
+    <!--Drop Down Menu For Currencies-->
+        <div class = "dropDown"> 
+            <button class = "currencyButton"> <b>CUR</b> </button>
+            <button class="secondCurrencyButton"> <b>CUR</b> </button>
+        </div>
+
 
     <div class = "ball"> </div>
     <div class= "ball2"> </div>

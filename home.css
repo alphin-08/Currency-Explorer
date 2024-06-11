@@ -1,12 +1,5 @@
 
-
 body{
-    /*Before All Changes*/
-    
-    /* background: linear-gradient(
-        to right, #220555, #1E0945, #130A30,
-        #0A0B1F
-    ); */
     background: linear-gradient(to right, #0A0B1F, #1E0945, #130A30,#0A0B1F);
 }
 
@@ -64,45 +57,47 @@ body{
 }
 
 .Coin-machicne{
-    /* background-color: transparent; */
+    
+    mix-blend-mode: multiply;
     position: fixed;
         left: 0px;
-        top: 220px;
+        top: 150px;
     /* border-radius: 100px; */
 
     border-color: #130A30;
 }
 
-/* .dot {
-    position: fixed;
-        left: 800px;
-        top: 600px;
-    height: 80px;
-    width: 80px;
-    background-color: #463675;
-    border-radius: 50%;
-    display: inline-block;
-} */
+input {
+    position: relative;
+    width: 12%;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Times New Roman';
+}
 
 .firstInput{
     color:white;
+    font-family: 'Times New Roman';
     font-size:30px;
     position: relative;
         left: 1100px;
         top: 300px;
+    height: 80%;
 }
 
 .secondInput{
+    font-family: 'Times New Roman';
     color: white;
     font-size: 30px;
     position: relative;
         left: 1450px;
-        top: 230px;
+        top: 220px;
 }
 
 .Double-arrow{
     position: fixed;
-        left: 1315px;
+        left: 1350px;
         top: 300px;
     width:5%; 
     height:10%;
@@ -111,7 +106,7 @@ body{
 
 .ball{
     position: fixed;
-        left: 800px;
+        left: 880px;
         top: 600px;
     
     height: 100px;
@@ -136,7 +131,7 @@ body{
 
 .ball3{
     position: fixed;
-        left: 900px;
+        left: 800px;
         top: 200px;
         height: 50px;
         width: 50px;
@@ -155,3 +150,29 @@ body{
     border-radius: 50%;
     box-shadow: inset 0 -10px 20px gray;
 }
+
+
+.currencyButton{
+font-size: large;
+position: fixed;
+    left:1287px;
+    top:344px;
+background-color:transparent;
+border-radius: 10px;
+width: 3%;
+line-height: 40px;
+}
+
+.secondCurrencyButton{
+font-size: large;
+position: fixed;
+    left: 1640px;
+    top: 344px;
+background-color: transparent;
+border-radius: 10px;
+width: 3%;
+line-height: 40px;
+}
+
+
+
