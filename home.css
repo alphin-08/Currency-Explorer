@@ -1,6 +1,8 @@
 
 body{
     background: linear-gradient(to right, #0A0B1F, #1E0945, #130A30,#0A0B1F);
+    /* align-items: center;
+    min-height: 100vh; */
 }
 
 .currency-converter{
@@ -32,28 +34,28 @@ body{
 
 .browse-all-currencies{
     background-color: #463675;
-        color: white;
-        position: fixed;
-            left: 210px;
-            top: 20px;
-        font-size: 20px;
-        height: 50px;
-        width: 300px;
-        border-radius: 30px;
-        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
+    color: white;
+    position: fixed;
+        left: 210px;
+        top: 20px;
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
 }
 
 .live-rate{
     background-color: #463675;
-        color: white;
-        position: fixed;
-            left: 520px;
-            top: 20px;
-        font-size: 20px;
-        height: 50px;
-        width: 150px;
-        border-radius: 30px;
-        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
+    color: white;
+    position: fixed;
+        left: 520px;
+        top: 20px;
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6)
 }
 
 .Coin-machicne{
@@ -62,14 +64,12 @@ body{
     position: fixed;
         left: 0px;
         top: 150px;
-    /* border-radius: 100px; */
-
     border-color: #130A30;
 }
 
 input {
-    position: relative;
-    width: 12%;
+    position: fixed;
+    width: 11%;
     line-height: 40px;
     border-radius: 10px;
     font-size: 1em;
@@ -80,7 +80,7 @@ input {
     color:white;
     font-family: 'Times New Roman';
     font-size:30px;
-    position: relative;
+    position: fixed;
         left: 1100px;
         top: 300px;
     height: 80%;
@@ -90,18 +90,17 @@ input {
     font-family: 'Times New Roman';
     color: white;
     font-size: 30px;
-    position: relative;
+    position: fixed;
         left: 1450px;
-        top: 220px;
+        top: 300px;
 }
 
-.Double-arrow{
+.Double-arrow{ 
     position: fixed;
         left: 1350px;
         top: 300px;
     width:5%; 
     height:10%;
-    
 }
 
 .ball{
@@ -123,27 +122,27 @@ input {
         left: 228px;
         top: 148px;
     height: 75px;
-        width: 75px;
-        background-color: #463675;
-        border-radius: 50%;
-        box-shadow: inset 0 -10px 20px gray;
+    width: 75px;
+    background-color: #463675;
+    border-radius: 50%;
+    box-shadow: inset 0 -10px 20px gray;
 }
 
 .ball3{
     position: fixed;
         left: 800px;
         top: 200px;
-        height: 50px;
-        width: 50px;
-        background-color: #463675;
-        border-radius: 50%;
-        box-shadow: inset 0 -10px 20px gray;
+    height: 50px;
+    width: 50px;
+    background-color: #463675;
+    border-radius: 50%;
+    box-shadow: inset 0 -10px 20px gray;
 }
 
 .ball4 {
     position: fixed;
         left: 1400px;
-            top: 20px;
+        top: 20px;
     height: 80px;
     width: 80px;
     background-color: #463675;
@@ -153,10 +152,10 @@ input {
 
 
 .currencyButton{
-font-size: large;
+font-size:large;
 position: fixed;
-    left:1287px;
-    top:344px;
+    left:1280px;
+    top:335px;
 background-color:transparent;
 border-radius: 10px;
 width: 3%;
@@ -166,8 +165,8 @@ line-height: 40px;
 .secondCurrencyButton{
 font-size: large;
 position: fixed;
-    left: 1640px;
-    top: 344px;
+    left: 1631px;
+    top: 335px;
 background-color: transparent;
 border-radius: 10px;
 width: 3%;
