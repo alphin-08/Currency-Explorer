@@ -86,9 +86,9 @@ async function fetchCurrencyValuesBasedUsd() {
 
 
 
-// Call the fetchCurrencies function to execute the code
-fetchCurrencies();
+// // Call the fetchCurrencies function to execute the code
+// fetchCurrencies();
 
-// // Call the fetchCurrencyValuesUsd function to execute the code
-// fetchCurrencyValuesBasedUsd();
+// Call the fetchCurrencyValuesUsd function to execute the code
+fetchCurrencyValuesBasedUsd();
 
