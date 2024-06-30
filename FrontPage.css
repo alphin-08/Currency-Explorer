@@ -59,6 +59,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10%;
 }
 
 nav {
@@ -161,7 +162,7 @@ nav {
 .mainContainer2{
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 10%;
 }
 
 .headingContainer{
@@ -190,4 +191,25 @@ nav {
 
 .currencySection{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.currencies{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content:space-evenly;
+    justify-self: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1%;
+    border-radius: 2rem;
+}
+
+.currencies p:hover{
+    background-color: white;
+    color: black;
 }
