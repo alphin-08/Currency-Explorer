@@ -2,6 +2,58 @@ body{
     background: linear-gradient(to right, #0A0B1F, #1E0945, #130A30, #0A0B1F);
 }
 
+#frontPage {
+    position: relative;
+}
+
+.backgroundContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.ball,
+.ball2,
+.ball3,
+.ball4 {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #463675;
+    box-shadow: inset 0 -10px 20px gray;
+}
+
+.ball {
+    height: 8vw;
+    width: 8vw;
+    top: 15vh;
+    left: 5vw;
+}
+
+.ball2 {
+    height: 5.5vw;
+    width: 5.5vw;
+    top: 40vh;
+    left: 30vw;
+}
+
+.ball3 {
+    height: 3vw;
+    width: 3vw;
+    top: 60vh;
+    left: 50vw;
+}
+
+.ball4 {
+    height: 6vw;
+    width: 6vw;
+    top: 10vh;
+    left: 130vh;
+}
+
 .mainContainer{
     width: 100%;
     height: auto;
@@ -31,7 +83,8 @@ nav {
 }
 
 .nav-items a:hover {
-    background-color: gray;
+    background-color: white;
+    color: black;
 }
 
 .content{
@@ -49,7 +102,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    gap: 5%;
 }
 
 .leftContainer h1{
@@ -104,36 +157,37 @@ nav {
     mix-blend-mode: multiply;
 }
 
-.ball {
-    height: 100px;
-    width: 100px;
-    background-color: #463675;
-    border-radius: 50%;
-    box-shadow: inset 0 -10px 20px gray;
+/*Browse Currenices*/
+.mainContainer2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.headingContainer{
+    text-align: center;
+    color: white;
+}
+
+.nav-items2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-items2 a {
+    text-decoration: none;
+    padding: 1%;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+}
+
+.nav-items2 a:hover {
+    background-color: white;
+    color: black;
 }
 
 
-
-.ball2 {
-    height: 75px;
-    width: 75px;
-    background-color: #463675;
-    border-radius: 50%;
-    box-shadow: inset 0 -10px 20px gray;
-}
-
-.ball3 {
-    height: 50px;
-    width: 50px;
-    background-color: #463675;
-    border-radius: 50%;
-    box-shadow: inset 0 -10px 20px gray;
-}
-
-.ball4 {
-    height: 80px;
-    width: 80px;
-    background-color: #463675;
-    border-radius: 50%;
-    box-shadow: inset 0 -10px 20px gray;
+.currencySection{
+    text-align: center;
 }
