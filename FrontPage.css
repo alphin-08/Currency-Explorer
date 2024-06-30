@@ -1,0 +1,105 @@
+body{
+    background: linear-gradient(to right, #0A0B1F, #1E0945, #130A30, #0A0B1F);
+}
+
+.mainContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    padding: 2%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-items a {
+    text-decoration: none;
+    padding: 1%;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+}
+
+.nav-items a:hover {
+    background-color: gray;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.leftContainer, .rightContainer{
+    flex: 1;
+    height: auto;
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.leftContainer h1{
+    background-image: linear-gradient(to bottom,
+                #FFFFFF, #DAABFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 70px;
+}
+
+.leftContainer p{
+    background-image: linear-gradient(to bottom,
+                #FFFFFF, #DAABFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.inputContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inputHeadings{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    font-size: 2rem;
+    color: white;
+}
+
+.inputContainer input{
+    width: 15rem;
+    border-radius: 20rem;
+    height: 4rem;
+}
+.inputContainer img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.rightContainer{
+    max-width: 100%;
+}
+
+.coin-machince{
+    max-width: 100%;
+    mix-blend-mode: multiply;
+}
