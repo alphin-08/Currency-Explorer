@@ -1,39 +1,45 @@
-body{
+/* Set the background with a gradient and the font style for the entire body */
+body {
     background: linear-gradient(to right, #0A0B1F, #1E0945, #130A30, #0A0B1F);
-    font-family:'Times New Roman';
+    font-family: 'Times New Roman';
 }
 
+/* Set the position of the front page section relative to its parent */
 #frontPage {
     position: relative;
 }
 
+/* Style for the background container to cover the entire viewport */
 .backgroundContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Hide overflow */
+    z-index: -1; /* Place it behind other elements */
 }
 
+/* Style for the ball elements */
 .ball,
 .ball2,
 .ball3,
 .ball4 {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #463675;
-    box-shadow: inset 0 -10px 20px gray;
+    position: absolute; /* Position them absolutely */
+    border-radius: 50%; /* Make them circular */
+    background-color: #463675; /* Set background color */
+    box-shadow: inset 0 -10px 20px gray; /* Add inner shadow */
 }
 
+/* Specific style for the first ball */
 .ball {
-    height: 8vw;
-    width: 8vw;
-    top: 15vh;
-    left: 5vw;
+    height: 8vw; /* Set height */
+    width: 8vw; /* Set width */
+    top: 15vh; /* Position from the top */
+    left: 5vw; /* Position from the left */
 }
 
+/* Specific style for the second ball */
 .ball2 {
     height: 5.5vw;
     width: 5.5vw;
@@ -41,6 +47,7 @@ body{
     left: 30vw;
 }
 
+/* Specific style for the third ball */
 .ball3 {
     height: 3vw;
     width: 3vw;
@@ -48,6 +55,7 @@ body{
     left: 50vw;
 }
 
+/* Specific style for the fourth ball */
 .ball4 {
     height: 6vw;
     width: 6vw;
@@ -55,201 +63,245 @@ body{
     left: 130vh;
 }
 
-.mainContainer{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10%;
+/* Style for the main container */
+.mainContainer {
+    width: 100%; /* Full width */
+    height: auto; /* Height adjusts to content */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    margin-bottom: 10%; /* Add bottom margin */
 }
 
+/* Style for navigation bars */
 nav {
-    width: 100%;
-    background-color: transparent;
-    padding: 2%;
-    height: auto;
-    margin-bottom: 5%;
+    width: 100%; /* Full width */
+    background-color: transparent; /* Transparent background */
+    padding: 2%; /* Add padding */
+    height: auto; /* Height adjusts to content */
+    margin-bottom: 5%; /* Add bottom margin */
 }
 
+/* Style for navigation items */
 .nav-items {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-evenly; /* Distribute items evenly */
 }
 
+/* Style for navigation links */
 .nav-items a {
-    text-decoration: none;
-    padding: 1%;
-    color: white;
-    font-size: 1.6rem;
-    border-radius: 2rem;
+    text-decoration: none; /* Remove underline */
+    padding: 1%; /* Add padding */
+    color: white; /* Set text color */
+    font-size: 1.6rem; /* Set font size */
+    border-radius: 2rem; /* Round the corners */
 }
 
+/* Change background and text color on hover */
 .nav-items a:hover {
     background-color: white;
     color: black;
 }
 
-.content{
-    display: flex;
-    flex-direction: row;
-    height: auto;
+/* Style for the content container */
+.content {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Arrange children in a row */
+    height: auto; /* Height adjusts to content */
 }
 
-.leftContainer, .rightContainer{
-    flex: 1;
-    height: auto;
+/* Flex properties for left and right containers */
+.leftContainer,
+.rightContainer {
+    flex: 1; /* Take equal space */
+    height: auto; /* Height adjusts to content */
 }
 
-.leftContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5%;
+/* Style for the left container */
+.leftContainer {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center align items */
+    gap: 5%; /* Add gap between items */
 }
 
-.leftContainer h1{
-    background-image: linear-gradient(to bottom,
-                #FFFFFF, #DAABFF);
-    -webkit-background-clip: text;
+/* Style for the main heading in the left container */
+.leftContainer h1 {
+    background-image: linear-gradient(to bottom, #FFFFFF, #DAABFF); /* Text gradient */
+    -webkit-background-clip: text; /* Clip background to text */
     background-clip: text;
-    color: transparent;
-    font-size: 70px;
+    color: transparent; /* Make text transparent */
+    font-size: 70px; /* Set font size */
 }
 
-.leftContainer p{
-    background-image: linear-gradient(to bottom,
-                #FFFFFF, #DAABFF);
-    -webkit-background-clip: text;
+/* Style for the paragraph in the left container */
+.leftContainer p {
+    background-image: linear-gradient(to bottom, #FFFFFF, #DAABFF); /* Text gradient */
+    -webkit-background-clip: text; /* Clip background to text */
     background-clip: text;
-    color: transparent;
+    color: transparent; /* Make text transparent */
 }
 
-
-.inputContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+/* Style for the input container */
+.inputContainer {
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Arrange children in a row */
+    align-items: center; /* Align items center */
 }
 
-.inputHeadings{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    gap: 40%;
-    font-size: 2rem;
-    color: white;
+/* Style for the input headings */
+.inputHeadings {
+    width: 50%; /* Set width */
+    display: flex; /* Use flexbox layout */
+    flex-direction: row; /* Arrange children in a row */
+    gap: 40%; /* Add gap between items */
+    font-size: 2rem; /* Set font size */
+    color: white; /* Set text color */
 }
 
-.inputContainer input{
-    width: 15rem;
-    border-radius: 20rem;
-    height: 4rem;
-}
-.inputContainer img{
-    width: 6rem;
-    height: 6rem;
+/* Style for the input fields */
+.inputContainer input {
+    width: 15rem; /* Set width */
+    border-radius: 20rem; /* Round the corners */
+    height: 4rem; /* Set height */
 }
 
-.rightContainer{
-    max-width: 100%;
+/* Style for the image in the input container */
+.inputContainer img {
+    width: 6rem; /* Set width */
+    height: 6rem; /* Set height */
 }
 
-.coin-machince{
-    max-width: 100%;
-    mix-blend-mode: multiply;
+/* Style for the right container */
+.rightContainer {
+    max-width: 100%; /* Full width */
 }
 
-/*Browse Currenices*/
-.mainContainer2{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10%;
+/* Style for the coin machine image */
+.coin-machince {
+    max-width: 100%; /* Full width */
+    mix-blend-mode: multiply; /* Blend mode */
 }
 
-.headingContainer{
-    text-align: center;
-    color: white;
+/* Style for the second main container */
+.mainContainer2 {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    margin-bottom: 10%; /* Add bottom margin */
 }
 
-.nav-items2{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+/* Style for the heading container */
+.headingContainer {
+    text-align: center; /* Center align text */
+    color: white; /* Set text color */
 }
 
+/* Style for the second set of navigation items */
+.nav-items2 {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-evenly; /* Distribute items evenly */
+    flex-wrap: wrap; /* Wrap items to new line */
+}
+
+/* Style for the second set of navigation links */
 .nav-items2 a {
-    text-decoration: none;
-    padding: 1%;
-    color: white;
-    font-size: 1.6rem;
-    border-radius: 2rem;
+    text-decoration: none; /* Remove underline */
+    padding: 1%; /* Add padding */
+    color: white; /* Set text color */
+    font-size: 1.6rem; /* Set font size */
+    border-radius: 2rem; /* Round the corners */
 }
 
+/* Change background and text color on hover */
 .nav-items2 a:hover {
     background-color: white;
     color: black;
 }
 
-.currencySection{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+/* Style for the currency section */
+.currencySection {
+    text-align: center; /* Center align text */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
 }
 
-.currencies{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-evenly;
-    justify-self: flex-start;
-    flex-wrap: wrap;
-    font-size: 1.4rem;
-    color: white;
-    padding: 1%;
+/* Style for the currency items */
+.currencies {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    justify-content: space-evenly; /* Distribute items evenly */
+    justify-self: flex-start; /* Align self start */
+    flex-wrap: wrap; /* Wrap items to new line */
+    font-size: 1.4rem; /* Set font size */
+    color: white; /* Set text color */
+    padding: 1%; /* Add padding */
 }
 
-.currencies p:hover{
+/* Change background and text color on hover */
+.currencies p:hover {
     background-color: white;
     color: black;
-    border: 2%;
-    border-radius: 1rem;
+    border: 2%; /* Add border */
+    border-radius: 1rem; /* Round the corners */
 }
 
+/* Style for the subcurrencies */
 .subcurrencies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center align items */
 }
 
+/* Style for the images in subcurrencies */
 .subcurrencies img {
-    width: 3rem;
-    height: 3rem;
+    width: 3rem; /* Set width */
+    height: 3rem; /* Set height */
 }
 
+/* Style for the dropdown container */
+.dropDown {
+    display: flex; /* Use flexbox layout */
+    gap: 1rem; /* Add gap between items */
+}
+
+/* Style for the currency buttons */
+.currencyButton,
+.secondCurrencyButton {
+    position: relative; /* Position relative to parent */
+    margin: 10px; /* Add margin */
+    z-index: 1; /* Set z-index */
+}
+
+/* Style for the dropdown menu */
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    width: 200px;
-    max-height: 200px;
-    overflow-y: auto;
+    display: none; /* Hide by default */
+    position: absolute; /* Position absolutely */
+    top: 100%; /* Position below the button */
+    left: 0; /* Align to the left */
+    background-color: white; /* Set background color */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Round the corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Add shadow */
+    z-index: 1000; /* Set z-index */
+    width: 200px; /* Set width */
+    max-height: 200px; /* Set maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
+/* Show dropdown menu when active */
 .dropdown-menu.show {
-    display: block;
+    display: block; /* Display block */
 }
 
+/* Style for dropdown items */
 .dropdown-item {
-    display: block;
-    padding: 8px 16px;
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
+    display: block; /* Display block */
+    padding: 8px 16px; /* Add padding */
+    color: #333; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
+/* Change background color on hover */
 .dropdown-item:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Light grey background */
 }
