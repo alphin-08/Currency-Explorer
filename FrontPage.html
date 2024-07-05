@@ -8,16 +8,14 @@
 
     <link href="FrontPage.css" rel="stylesheet">
     <title>Currency Converter</title>
-
-
 </head>
 <body>
     <section id="frontPage">
-        <div class = "backgroundContainer">
-            <div class="ball"> </div>
-            <div class="ball2"> </div>
-            <div class="ball3"> </div>
-            <div class="ball4"> </div>
+        <div class="backgroundContainer">
+            <div class="ball"></div>
+            <div class="ball2"></div>
+            <div class="ball3"></div>
+            <div class="ball4"></div>
         </div>
         <div class="mainContainer">
             <div class="navagationBar">
@@ -29,7 +27,7 @@
                     </div>
                 </nav>
             </div>
-    
+
             <div class="content">
                 <div class="leftContainer">
                    <h1>Currency<br>Converter</h1>
@@ -37,13 +35,13 @@
                     the drop down menu and enter an amount
                    </p>
 
-                    <div class = "inputHeadings">
+                    <div class="inputHeadings">
                         <label for="firstInput"> Amount </label>
                         <label for="secondInput"> Converted To </label>
                     </div>
 
-                   <div class = "inputContainer">
-                        <input type="text" name="firstInput" placeholder="Enter amount" >
+                   <div class="inputContainer">
+                        <input type="text" name="firstInput" placeholder="Enter amount">
 
                         <img class="Double-arrow" src="doubleArrow.png" alt="double arrow">
 
@@ -51,20 +49,19 @@
                    </div>
 
                     <div class="dropDown">
-                        <button class="currencyButton"> <b>CUR</b> </button>
-                        <button class="secondCurrencyButton"> <b>CUR</b> </button>
+                        <button class="currencyButton" id="currencyButton1"><b>CUR</b></button>
+                        <button class="secondCurrencyButton" id="currencyButton2"><b>CUR</b></button>
                     </div>
                 </div>
-    
+
                 <div class="rightContainer">
                     <img class="coin-machince" src="currencyMachine.png" alt="Coin Machine">
-    
                 </div>
             </div>
-    
         </div>
     </section>
 
+    
     <section id = "browseCurrenciesSection">
         <div class= "mainContainer2">
             <div class = "headingContainer">
@@ -252,12 +249,24 @@
         </div>
     </section>
 
-    <section id = "liveRateSection">
-        <div class="mainContainer3">
-        
-        </div>
 
+
+    
+
+    <section id="liveRateSection">
+        <div class="mainContainer3">
+        </div>
     </section>
     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="apiTest.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

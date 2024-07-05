@@ -1,6 +1,3 @@
-// Import the axios library, which is used to make HTTP requests
-const axios = require('axios');
-
 // Declare an asynchronous function called fetchCurrencies
 async function fetchCurrencies() {
     try {
@@ -24,71 +21,45 @@ async function fetchCurrencies() {
             }
         }
 
-        // Print a header for the list of available currencies
-        console.log('Available Currencies:');
-        // Loop through each currency in the currencies array
-        for (const currency of currencies) {
-            // Print the code and name of the current currency
-            console.log(`${currency.code}: ${currency.name}`);
-        }
+        return currencies;
     } catch (error) {
         // If there is an error during the try block, print the error message
         console.error('Error fetching currencies:', error);
     }
 }
 
+// Function to create a dropdown menu
+function createDropdown(id, currencies) {
+    const button = document.getElementById(id);
+    const dropdown = document.createElement('div');
+    dropdown.className = 'dropdown-menu';
 
+    currencies.forEach(currency => {
+        const item = document.createElement('a');
+        item.className = 'dropdown-item';
+        item.href = '#';
+        item.textContent = `${currency.code}: ${currency.name}`;
+        item.onclick = () => {
+            button.innerHTML = `<b>${currency.code}</b>`;
+            dropdown.classList.remove('show');
+        };
+        dropdown.appendChild(item);
+    });
 
-async function fetchCurrencyValuesBasedUsd() {
-    // Declares an asynchronous function named fetchCurrencyValues.
-
-    try {
-        // Begins a try block to handle any errors that occur within it.
-
-        const response = await axios.get('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json');
-        // Uses axios to send an HTTP GET request to the specified URL and waits for the response. 
-        // The response is assigned to the variable response.
-
-        const data = response.data;
-        // Extracts the data property from the response object and assigns it to the variable data.
-
-        const { date, ...currencies } = data;
-        // Uses destructuring to extract the date property from the data object and assigns the rest of the properties 
-        // to the currencies object.
-
-        console.log(`Currency Values Based on USD (as of ${date}):`);
-        // Prints a message to the console, including the date, indicating the currency values are based on USD.
-
-        for (const code in currencies) {
-            // Starts a for-in loop to iterate over each property (currency code) in the currencies object.
-
-            const value = currencies[code];
-            // Assigns the value of the current currency code to the variable value.
-
-            if (typeof value === 'object') {
-                // Checks if the type of the value is an object.
-
-                console.log(`1 USD = ${JSON.stringify(value)} ${code}`);
-                // If the value is an object, converts it to a JSON string and prints it with the currency code.
-
-            } else {
-                console.log(`1 USD = ${value} ${code}`);
-                // If the value is not an object, prints it directly with the currency code.
-            }
-        }
-    } catch (error) {
-        // Begins a catch block to handle any errors that occur in the try block.
-
-        console.error('Error fetching currency values:', error);
-        // Prints an error message to the console if an error occurs.
-    }
+    button.parentNode.appendChild(dropdown);
+    button.onclick = () => {
+        dropdown.classList.toggle('show');
+    };
 }
 
+// Call the fetchCurrencies function and populate the dropdowns
+fetchCurrencies().then(currencies => {
+    createDropdown('currencyButton1', currencies);
+    createDropdown('currencyButton2', currencies);
+});
 
 
-// // Call the fetchCurrencies function to execute the code
-// fetchCurrencies();
 
-// Call the fetchCurrencyValuesUsd function to execute the code
-fetchCurrencyValuesBasedUsd();
+
+
 
