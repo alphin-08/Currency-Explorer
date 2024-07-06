@@ -30,18 +30,19 @@
                     <h1>Currency<br>Converter</h1>
                     <p>To get started choose a currency from the drop down menu and enter an amount</p>
                     <div class="inputHeadings">
-                        <label for="firstInput"> Amount </label>
-                        <label for="secondInput"> Converted To </label>
+                        <label for="amountInput"> Amount </label>
+                        <label for="convertedAmount"> Converted To </label>
                     </div>
                     <div class="inputContainer">
-                        <input type="text" name="firstInput" placeholder="Enter amount">
+                        <input type="text" id="amountInput" placeholder="Enter amount">
                         <img class="Double-arrow" src="doubleArrow.png" alt="double arrow">
-                        <input type="text" name="secondInput" placeholder="Converted amount">
+                        <input type="text" id="convertedAmount" placeholder="Converted amount" readonly>
                     </div>
                     <div class="dropDown">
                         <button class="currencyButton" id="currencyButton1"><b>CUR</b></button>
                         <button class="secondCurrencyButton" id="currencyButton2"><b>CUR</b></button>
                     </div>
+                    <button id="calculateButton">Calculate</button>
                 </div>
                 <div class="rightContainer">
                     <img class="coin-machince" src="currencyMachine.png" alt="Coin Machine">
@@ -98,3 +99,4 @@
     <script src="apiTest.js"></script>
 </body>
 </html>
+

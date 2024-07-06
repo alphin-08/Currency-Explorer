@@ -137,6 +137,47 @@ function populateCurrencySection(currencies) {
     }
 }
 
+// Function to convert currency
+async function convertCurrency(fromCurrency, toCurrency, amount) {
+    try {
+        // Fetch the exchange rates for the base currency (fromCurrency)
+        const response = await axios.get(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${fromCurrency}.json`);
+        const rates = response.data;
+
+        // Get the rate for the target currency (toCurrency)
+        const rate = rates[toCurrency];
+
+        if (rate) {
+            // Calculate the converted amount
+            const convertedAmount = amount * rate;
+            return convertedAmount;
+        } else {
+            throw new Error(`Exchange rate not available for ${toCurrency}`);
+        }
+    } catch (error) {
+        console.error('Error converting currency:', error);
+        return null;
+    }
+}
+
+// Event listener for the calculate button
+document.getElementById('calculateButton').addEventListener('click', async () => {
+    const amount = document.getElementById('amountInput').value;
+    const fromCurrency = document.getElementById('currencyButton1').textContent.trim();
+    const toCurrency = document.getElementById('currencyButton2').textContent.trim();
+
+    if (amount && fromCurrency && toCurrency && fromCurrency !== 'CUR' && toCurrency !== 'CUR') {
+        const convertedAmount = await convertCurrency(fromCurrency, toCurrency, amount);
+        if (convertedAmount !== null) {
+            document.getElementById('convertedAmount').value = convertedAmount.toFixed(2);
+        } else {
+            alert('Error converting currency. Please try again.');
+        }
+    } else {
+        alert('Please enter a valid amount and select both currencies.');
+    }
+});
+
 // Close the dropdown when clicking outside
 document.addEventListener('click', () => {
     // Hide all dropdown menus
