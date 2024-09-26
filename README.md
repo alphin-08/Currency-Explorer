@@ -1,3 +1,3 @@
 Live Demo: https://alphin-08.github.io/Currency-Explorer/ 
-Current Goal: To make it responsive on all screen sizes and switch out the free exchange api to another
-more improved one to have more accurate results 
+Current Goal: To ensure the site is fully responsive across all screen sizes and replace 
+the free exchange API with a more advanced one for improved accuracy in exchange rates.
