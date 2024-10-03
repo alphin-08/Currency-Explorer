@@ -1,4 +1,16 @@
-@media (max-width: 800px) {
+@media (max-width: 1653px) {
+    #browseCurrenciesSection{
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 1420px) {
+    #browseCurrenciesSection {
+        margin-top: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
     .ball {
         height: 8vw;
         width: 8vw;
