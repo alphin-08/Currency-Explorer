@@ -1,0 +1,194 @@
+@media (max-width: 800px) {
+    .ball, .ball2, .ball3, .ball4{
+        width: 15vw;
+        height: 15vw;
+        top: auto;
+        left: auto;
+    }
+
+    .ball4{
+        display: none;
+    }
+
+    .mainContainer{
+        flex-direction: column;
+        padding: 5%;
+        margin-bottom: 10%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .leftContainer h1{
+        font-size: 2.5rem;
+    }
+    .leftContainer p{
+        font-size: 1.2rem;
+    }
+
+    .inputHeadings{
+        font-size: 1.2rem;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .inputContainer input{
+        width: 12rem;
+        height: 3rem;
+    }
+
+    .inputContainer img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .rightContainer{
+        max-width: 100%;
+        margin-top: 5%;
+    }
+
+    .rightContainer img{
+        position: relative;
+        left: -45px;
+    }
+
+    nav{
+        padding: 1%;
+        margin-bottom: 5%;
+    }
+
+    .nav-items{
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    .nav-items a {
+        font-size: 1.4rem;
+        padding: 1%;
+    }
+
+    .currencies{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .nav-items2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-items2 a{
+        font-size: 1.4rem;
+        padding: 0.4rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .ball,
+    .ball2,
+    .ball3,
+    .ball4 {
+        width: 15vw;
+        height: 15vw;
+        top: auto;
+        left: auto;
+    }
+
+    .ball4 {
+        display: none;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        padding: 5%;
+        margin-bottom: 10%;
+    }
+    .inputContainer, .inputHeadings, #calculateButton{
+        margin-top: 10%;
+    }
+    
+    .dropDown{
+        flex-direction: row;
+        gap: 10%;
+    }
+    .leftContainer h1{
+        font-size: 3.5rem;
+    }
+
+    .headingContainer h1{
+        font-size: 2rem;
+    }
+
+    .leftContainer p {
+        font-size: 1rem;
+        display: none;
+    }
+
+    .inputHeadings {
+        font-size: 1.2rem;
+        flex-direction: column;
+        /* gap: 4%; */
+    }
+
+    .inputContainer input {
+        width: 9rem;
+        height: 2rem;
+    }
+
+    .inputContainer img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .rightContainer{
+        max-width: 100%;
+        margin-top: 5%;
+    }
+
+    /*CurrencyImage*/
+    .rightContainer img {
+        position: relative;
+        left: -30px;
+    }
+
+    nav {
+        padding: 1%;
+        margin-bottom: 5%;
+    }
+
+    .nav-items {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-items a {
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+
+    .nav-items2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-items2 a {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+
+    .currencies {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1rem;
+    }
+}

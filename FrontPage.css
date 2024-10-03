@@ -196,8 +196,10 @@ nav {
 
 .nav-items2 {
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap; 
+    max-width: 100%;
+    gap: 1rem;
 }
 
 
@@ -302,4 +304,8 @@ nav {
 
 .dropdown-item:hover {
     background-color: #f1f1f1;
+}
+
+#calculateButton{
+    font-weight: bold;
 }
