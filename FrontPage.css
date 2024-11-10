@@ -1,7 +1,8 @@
 
 body {
     background: linear-gradient(to right, #0A0B1F, #1E0945, #130A30, #0A0B1F);
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
+    color: white;
 }
 
 #frontPage {
@@ -193,57 +194,76 @@ nav {
     color: white; 
 }
 
+.headingContainer h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 
 .nav-items2 {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     max-width: 100%;
     gap: 1rem;
+    padding: 1rem 0;
 }
 
 
 .nav-items2 a {
-    text-decoration: none; 
-    padding: 1%; 
-    color: white; 
-    font-size: 1.6rem; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.4rem;
     border-radius: 2rem;
+    transition: background-color 0.3s, color 0.3s;
 }
-
-
 .nav-items2 a:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
     color: black;
 }
 
-
 .currencySection {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    width:100%;
+    width: 100%;
+    padding: 2rem 5%;
+    box-sizing: border-box;
+}
+.currencySection h2 {
+    font-size: 2rem;
+    color: #a9a9a9;
+    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 
 .currencies {
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-    justify-content: space-evenly; 
-    justify-self: flex-start; 
-    flex-wrap: wrap; 
-    font-size: 1.4rem; 
-    color: white; 
-    padding: 1%; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem 4rem;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem 0;
 }
 
+.currencies>div {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
 
-.currencies p:hover {
-    background-color: white;
-    color: black;
-    border: 2%; 
-    border-radius: 1rem;
+.currencies>div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 
 
