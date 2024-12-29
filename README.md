@@ -1,2 +1,2 @@
 
-Try it out here: [CineSwipe App](currency-explorer-gamma.vercel.app)
+Try it out here: [CineSwipe App](https://currency-explorer-gamma.vercel.app)
