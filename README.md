@@ -23,4 +23,4 @@ Frontend is hosted on Vercel
 
 
 
-Try it out here: [CineSwipe App](https://currency-explorer-gamma.vercel.app)
+Try it out here: [Currency Converter](https://currency-explorer-gamma.vercel.app)
