@@ -432,3 +432,50 @@ select:focus {
     padding: 5px;
     width: 200px;
 }
+
+
+/*Browser Currency Styling */
+.currencyGroup {
+    margin-bottom: 3rem;
+}
+
+.currencyGroup h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.currencyCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.currencyCard {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.currencyCard:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.currencyCode {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.currencyName {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #cccccc;
+}
