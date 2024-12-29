@@ -4,7 +4,9 @@ import './main.css';
 import './responsive.css';
 import doubleArrow from './imgs/doubleArrow.png';
 import currencyMachine from './imgs/currencyMachine.png';
-
+import vendingMachine from './imgs/vendingMachine.png';
+import exchangeRate from './imgs/exchangeRate.png';
+import exchangeRate2 from './imgs/exchangeRate2.png';
 
 function App() {
   const [fromCurrency, setFromCurrency] = useState('USD');
@@ -48,28 +50,43 @@ function App() {
               <h1>Currency<br />Converter</h1>
               <p>To get started, choose a currency from the dropdown menu and enter an amount</p>
               
-              <div className="inputHeadings">
-                <label htmlFor="amountInput">Amount</label>
-                <label htmlFor="convertedAmount">Converted To</label>
-              </div>
               <div className="inputContainer">
-                <input type="number" id="amountInput" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount"
-                />
+                <div className="inputGroup">
+                  <label htmlFor="amountInput">Enter Amount</label>
+                  <input 
+                    type="number" 
+                    id="amountInput" 
+                    value={amount} 
+                    onChange={(e) => setAmount(e.target.value)} 
+                    placeholder="Enter amount" 
+                  />
+                </div>
 
                 <img className="Double-arrow" src={doubleArrow} alt="double arrow" />
-                {convertedAmount !== null && !isNaN(convertedAmount) ? (
-                  <input type="text" id="convertedAmount" value={convertedAmount !== null ? convertedAmount.toFixed(2) : ''} placeholder="Converted amount" readOnly
-                  />
-                ) : (
-                  <input
-                    type="text"
-                    id="convertedAmount"
-                    value=""
-                    placeholder="Converted amount"
-                    readOnly
-                  />
-                )}
+
+                <div className="inputGroup">
+                  <label htmlFor="convertedAmount">Result</label>
+                  {convertedAmount !== null && !isNaN(convertedAmount) ? (
+                    <input 
+                      type="text" 
+                      id="convertedAmount" 
+                      value={convertedAmount.toFixed(2)} 
+                      placeholder="Converted amount" 
+                      readOnly 
+                    />
+                  ) : (
+                    <input 
+                      type="text" 
+                      id="convertedAmount" 
+                      value="" 
+                      placeholder="Converted amount" 
+                      readOnly 
+                    />
+                  )}
+                </div>
               </div>
+
+
               <div className="dropDown">
                 <select
                   className='currencyButton' id="currencyButton1" value={fromCurrency} onChange={(e) => setFromCurrency(e.target.value)}
@@ -109,7 +126,7 @@ function App() {
             </div>
 
             <div className="rightContainer">
-              <img src={currencyMachine} alt="Currency Machine" />
+              <img src={exchangeRate2} alt="Currency Machine" />
             </div>
           </div>
         </div>

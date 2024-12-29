@@ -213,16 +213,14 @@ select:focus {
 }
 
 .rightContainer {
+    display: flex;
+    justify-content: center;
     max-width: 100%;
 }
 
-
-.coin-machince {
-    max-width: 100%; 
-    mix-blend-mode: multiply;
+.rightContainer img{
+    max-width: 80%;
 }
-
-
 .mainContainer2 {
     display: flex; 
     flex-direction: column;
@@ -389,4 +387,48 @@ select:focus {
 #calculateButton:active {
     transform: scale(1);
     background-color: #3B3F78;
+}
+#amountInput,
+#convertedAmount {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputGroup label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.inputGroup input {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
 }
