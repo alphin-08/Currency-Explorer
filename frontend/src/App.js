@@ -177,11 +177,14 @@ function App() {
   const [toCurrency, setToCurrency] = useState('EUR');
   const [amount, setAmount] = useState('');
   const [convertedAmount, setConvertedAmount] = useState(null);
-
+  
+   const backendUrl =
+     process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+  
   const handleConvert = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/convert?fromCurrency=${fromCurrency}&toCurrency=${toCurrency}&amount=${amount}`
+        `${backendUrl}/convert?fromCurrency=${fromCurrency}&toCurrency=${toCurrency}&amount=${amount}`
       );
       const data = await response.json();
       setConvertedAmount(data.convertedAmount);
