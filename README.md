@@ -23,4 +23,8 @@ Frontend is hosted on Vercel
 
 
 
+
+Also clicking the calculate button the first time will cause a slight delay since the backend as to load up but results will appear in like 2 minutes max. Calculating afterwards would result in instant results
+
+
 Try it out here: [Currency Converter](https://currency-explorer-gamma.vercel.app)
